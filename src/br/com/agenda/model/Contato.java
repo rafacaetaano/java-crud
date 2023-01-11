@@ -2,12 +2,12 @@ package br.com.agenda.model;
 
 import java.util.Date;
 
-public class Agenda {
+public class Contato {
 	
 	private int id;
 	private String nome;
 	private int idade;
-	private Date data;
+	private Date dataCadastro;
 	
 	public int getId() {
 		return id;
@@ -27,11 +27,11 @@ public class Agenda {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public Date getData() {
-		return data;
+	public Date getDataCadastro() {
+		return dataCadastro;
 	}
-	public void setData(Date data) {
-		this.data = data;
+	public void setDataCadastro(Date data) {
+		this.dataCadastro = data;
 	}
 	
 }
