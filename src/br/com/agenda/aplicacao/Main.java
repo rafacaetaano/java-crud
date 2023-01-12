@@ -17,6 +17,24 @@ public class Main {
 		contato.setDataCadastro(new Date());
 		
 		contatoDao.save(contato);
+		
+		//atualizar contato
+		Contato c1 = new Contato();
+		c1.setNome("Alan Alonso Fernandes");
+		c1.setIdade(37);
+		c1.setDataCadastro(new Date());
+		c1.setId(1); //número no banco
+		
+		//contatoDao.update(c1);
+		
+		//deletar o contato pelo ID
+		contatoDao.deleteByID(1);
+		
+		//visualização de todos os registros do banco de dados
+		
+		for(Contato c : contatoDao.getContatos()) {
+			System.out.println("Contato " + c.getNome());
+		}
 	}
 
 }
